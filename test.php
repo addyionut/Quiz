@@ -1,17 +1,10 @@
 <html>
-
 	<body style="background-color:LightCyan">
-	
 		<h2 style="text-align:center;">Raspunsuri</h2>
 		<hr>
-		
 	</body>
-
 </html>
-
-
 <?php
-
 	$raspunsCorect=0;
 	$raspunsGresit=0;
 	$nrIntrebari=0;
@@ -19,22 +12,17 @@
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
 		{
-				if( isset( $_POST[ 'tara' ] ) && !empty( $_POST[ 'tara' ] ) ) 
-				{$nrIntrebari++;
-					
-					if($_POST["tara"]=="Angliei")
-						{
-						$raspunsCorect++;
-						echo "1. Ai raspuns corect: ".$_POST["tara"].".";
-						}
-						else 
-						{
-							$raspunsGresit++;
-								
-								echo "1. Nu ai raspuns corect!";
-						
-						}
+			if(isset( $_POST[ 'tara' ] ) && !empty( $_POST[ 'tara' ] ) ) {
+				$nrIntrebari++;		
+				if($_POST["tara"]=="Angliei") {
+					$raspunsCorect++;
+					echo "1. Ai raspuns corect: ".$_POST["tara"].".";
 				}
+					else {
+						$raspunsGresit++;			
+						echo "1. Nu ai raspuns corect!";
+					}
+			}
 			else 
 				echo "1. Nu ai bifat nici un raspuns!";	
 		}
@@ -43,8 +31,6 @@
 
 	echo "<br>";
 	echo "<br>";
-
-
 
 	if(isset($_POST["buton"]))
 	{
@@ -73,9 +59,6 @@
 echo "<br>";
 echo "<br>";
 
-	
-	
-	
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -103,10 +86,6 @@ echo "<br>";
 	echo "<br>";
 	echo "<br>";
 
-
-	
-	
-	
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -134,11 +113,6 @@ echo "<br>";
 	echo "<br>";
 	echo "<br>";
 
-
-	
-	
-
-	
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -165,14 +139,7 @@ echo "<br>";
 
 	echo "<br>";
 	echo "<br>";
-
-
-		
 	
-	
-	
-	
-		
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -200,12 +167,6 @@ echo "<br>";
 	echo "<br>";
 	echo "<br>";
 
-
-	
-	
-	
-	
-	
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -233,10 +194,6 @@ echo "<br>";
 	echo "<br>";
 	echo "<br>";
 
-
-	
-	
-	
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -263,10 +220,7 @@ echo "<br>";
 
 	echo "<br>";
 	echo "<br>";
-
-
 	
-		
 	if(isset($_POST["buton"]))
 	{
 		if( isset( $_POST ) && !empty( $_POST )) 
@@ -294,9 +248,6 @@ echo "<br>";
 	echo "<br>";
 	echo "<br>";
 
-
-	
-	
 		
 	if(isset($_POST["buton"]))
 	{
@@ -321,9 +272,6 @@ echo "<br>";
 					echo "10. Nu ai bifat nici un raspuns!";
 		}
 	}
-
-	
-	
 	
 	
 	echo "<br>";
@@ -331,16 +279,11 @@ echo "<br>";
 	echo "<br>";
 ?>
 
-
-
-
-
 <html>
 
 	<h3 style="text-align:center;">
 	
 		<hr>
-
 
 <?php
 	include ('conexiuneBd.php');
