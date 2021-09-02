@@ -1,5 +1,4 @@
 <?php
-
 	include 'conexiuneBd.php';
 	
 	$tabel="CREATE TABLE `tabel` (Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -9,14 +8,12 @@
 								Corecte INT,
 								Gresite INT)";
 	mysqli_query($conexiune,$tabel);
-	if(mysqli_query($conexiune,$tabel)){
+	if(mysqli_query($conexiune,$tabel)) {
 		echo "Tabelul a fost creat.";
 	}
-	else{
+	else {
 		echo "Tabelul  nu a fost creat:".mysqli_error($conexiune);
 	} 
-	echo "<br>";	 
-		
+	echo "<br>";	 	
 	mysqli_close($conexiune);
-
 ?>
