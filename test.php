@@ -242,7 +242,7 @@
 		else {
 			echo "Ai gresit raspunsul la ";?><html><b style="color:#FF0000"><?php echo $raspunsGresit; ?></b></html><?php echo " intrebari.";
 		}
-		//mysqli_close($conexiune);
+		mysqli_close($conexiune);
 	?>
 	</h3>
 	<a href="rezultate_test.php">Rezultate test</a>	
